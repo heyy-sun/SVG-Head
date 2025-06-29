@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SVG-head</title>
+
+  <!-- 引入字体和样式 -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/dics.original.css">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/interact-svgrepo-com.svg">
+  <link rel="stylesheet" href="./static/css/app.css">
+
+  <!-- 引入脚本 -->
+  <script src="./static/js/dics.original.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script src="./static/js/video-comparison.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', domReady);
+    function domReady() {
+      new Dics({
+        container: document.querySelectorAll('.b-dics')[0],
+        textPosition: 'top'
+      });
+      new Dics({
+        container: document.querySelectorAll('.b-dics')[1],
+        textPosition: 'top'
+      });
+      new Dics({
+        container: document.querySelectorAll('.b-dics')[2],
+        textPosition: 'top'
+      });
+      new Dics({
+        container: document.querySelectorAll('.b-dics')[3],
+        textPosition: 'top'
+      });
+      new Dics({
+        container: document.querySelectorAll('.b-dics')[4],
+        textPosition: 'top'
+      });
+    }
+  </script>
+
+  <style>
+    /* 注释块样式 */
+    .note {
+      background-color: #f9f9f9;
+      border-left: 4px solid #007BFF;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    .note strong {
+      color: #0056b3;
+    }
+    .note em {
+      text-decoration: underline;
+      color: inherit;
+    }
+
+    /* 目录样式 */
+    .toc {
+      background-color: #f4f4f9;
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      font-size: 1.4em;
+    }
+    .toc h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    .toc ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .toc li {
+      margin: 5px 0;
+    }
+    .toc a {
+      text-decoration: none;
+      color: #007BFF;
+      transition: color 0.3s ease;
+    }
+    .toc a:hover {
+      color: #0056b3;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    /* 图标前缀 */
+    .toc li a:before {
+      margin-right: 8px;
+    }
+    .toc li a#section1:before {
+      content: "\f015";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+    }
+    .toc li a#section2:before {
+      content: "\f0c8";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+    }
+    .toc li a#section3:before {
+      content: "\f0e7";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+    }
+    .toc li a#section4:before {
+      content: "\f1e6";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+    }
+
+    /* 视频区域样式 */
+    .video-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .video-item {
+      flex: 1;
+      text-align: center;
+      max-width: 45%;
+    }
+    .video-item video {
+      width: 100%;
+      height: auto;
+      max-height: 400px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .video-description {
+  font-size: 1.2rem; /* 增大字体 */
+  background: rgba(255, 255, 255, 0.8);
+  padding: 1em;
+  border-radius: 8px;
+  margin-bottom: 1em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.time-slot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.time-slot:last-child {
+  border-bottom: none;
+}
+
+.time {
+  font-weight: bold;
+  color: #333;
+}
+
+.description {
+  color: #666;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">
+              Hybrid <u>S</u>urface-<u>V</u>olumetric <u>G</u>aussians for High-Fidelity Head Reconstruction and Real-Time Editing
+            </h1>
+            <div class="is-size-4 publication-authors">
+              <span class="author-block">
+                <p>Anonymous</p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Viewer -->
+  <section class="section">
+  <div class="container is-max-desktop">
+    <div class="video-description">
+      <div class="time-slot">
+        <span class="time">00:00 - 00:28</span>
+        <span class="description">ICCV logo editing</span>
+      </div>
+      <div class="time-slot">
+        <span class="time">00:29 - 01:00</span>
+        <span class="description">Changing skin color</span>
+      </div>
+    </div>
+    <video id="edit1" autoplay controls muted loop playsinline>
+      <source src="./static/videos/edit1.mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
+
+
+  <!-- Contents -->
+  <div class="container is-max-desktop">
+    <nav class="toc">
+      <h2>Table of Contents</h2>
+      <ul>
+        <li><a href="#real-time-editing" id="section1">Real-time Interactive Editing</a></li>
+        <li><a href="#nvs_comp" id="section2">Comparisons on Novel View Synthesis</a></li>
+        <li><a href="#nes_comp" id="section3">Comparisons on Novel Expression Synthesis</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Editing -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 id="real-time-editing" class="title is-2">Real-time Interactive Editing</h2>
+      <p class="note">
+        SVG-Head supports <strong>high-quality renderings</strong> due to two types of Gaussians for complementary modeling, and <strong>real-time, fine-grained texture editing</strong> due to the disentanglement of the global appearance from head geometry.
+      </p>
+      <br>
+      <div class="video-container">
+        <div class="video-item">
+          <h3>the original rendering</h3>
+          <video id="074-to-302-origin" autoplay controls muted loop playsinline>
+            <source src="./static/videos/074-to-302-origin.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-item">
+          <h3>edited result</h3>
+          <video id="074-to-302" autoplay controls muted loop playsinline>
+            <source src="./static/videos/074-to-302.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      
+      <div class="video-container">
+        <div class="video-item">
+          <h3>the original rendering</h3>
+          <video id="304-iccv-origin" autoplay controls muted loop playsinline>
+            <source src="./static/videos/304-iccv-origin.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-item">
+          <h3>edited result</h3>
+          <video id="304-iccv" autoplay controls muted loop playsinline>
+            <source src="./static/videos/304-iccv.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="video-container">
+        <div class="video-item">
+          <h3>the original rendering</h3>
+          <video id="264-star-origin" autoplay controls muted loop playsinline>
+            <source src="./static/videos/264-star-origin.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-item">
+          <h3>edited result</h3>
+          <video id="264-star" autoplay controls muted loop playsinline>
+            <source src="./static/videos/264-star.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Novel View Synthesis -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 id="nvs_comp" class="title is-2">Comparisons on Novel View Synthesis</h2>
+      <p class="note">
+        SVG-Head captures dynamic facial details (e.g., wrinkles) due to the incorporation of dynamic textures, and obtains comparable rendering quality to those methods that focus only on the reconstruction
+      </p>
+      <br>
+      <video id="nvs074" autoplay controls muted loop playsinline>
+        <source src="./static/videos/074.mp4" type="video/mp4">
+      </video>
+      <video id="nvs306" autoplay controls muted loop playsinline>
+        <source src="./static/videos/306.mp4" type="video/mp4">
+      </video>
+    </div>
+  </section>
+
+  <!-- Novel Expression Synthesis -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 id="nes_comp" class="title is-2">Comparisons on Novel Expression Synthesis</h2>
+      <p></p>
+      <br>
+      <video id="nes264" autoplay controls muted loop playsinline>
+        <source src="./static/videos/264.mp4" type="video/mp4">
+      </video>
+      <video id="nes302" autoplay controls muted loop playsinline>
+        <source src="./static/videos/302.mp4" type="video/mp4">
+      </video>
+    </div>
+  </section>
+
+</body>
+</html>
