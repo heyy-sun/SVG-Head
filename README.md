@@ -2,7 +2,7 @@
 
 ![Method](assets/method.png)
 
-[Project Page](https://github.com/heyy-sun/SVG-Head) | [arXiv Paper](https://arxiv.org/abs/2508.09597)
+[Project Page](https://heyy-sun.github.io/SVG-Head/) | [arXiv Paper](https://arxiv.org/abs/2508.09597)
 
 ## Introduction
 
