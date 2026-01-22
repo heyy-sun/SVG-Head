@@ -1,0 +1,9 @@
+[submodule "submodules/simple-knn"]
+	path = submodules/simple-knn
+	url = https://gitlab.inria.fr/bkerbl/simple-knn.git
+[submodule "submodules/diff-gauss-hybrid-tex"]
+	path = submodules/diff-gauss-hybrid-tex
+	url = https://github.com/heyy-sun/diff-gauss-hybrid-tex.git
+[submodule "submodules/diff-gauss"]
+	path = submodules/diff-gauss
+	url = https://github.com/heyy-sun/diff-gauss
